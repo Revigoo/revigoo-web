@@ -728,7 +728,21 @@ transform:translateY(-12px);
 .line-orange.second{
 display:none;
 }
+.liquid-mesh{
+display:none;
+}
+body{
+background: linear-gradient(
+120deg,
+#001621,
+#002238,
+#00304a,
+#001621
+);
 
+background-size:500% 500%;
+animation:waterFlow 12s ease-in-out infinite;
+}
 .blob{
 filter:blur(30px);
 opacity:.5;
