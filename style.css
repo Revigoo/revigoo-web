@@ -730,8 +730,8 @@ display:none;
 }
 
 .blob{
-filter:blur(60px);
-opacity:.7;
+filter:blur(30px);
+opacity:.5;
 }
 
 header{
@@ -874,7 +874,6 @@ position:absolute;
 border-radius:50%;
 filter:blur(100px);
 opacity:.9;
-mix-blend-mode:screen;
 }
 
 /* Blue Blob */
