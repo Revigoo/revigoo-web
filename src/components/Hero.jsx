@@ -50,7 +50,7 @@ export default function Hero() {
           {/* Description */}
           <p className="mt-8 max-w-xl text-base sm:text-lg leading-8 text-gray-400">
 
-            REVEGOO is a smart bike service marketplace that connects riders with trusted garages, making every service transparent, convenient, and reliable.
+            REVIGOO is a smart bike service marketplace that connects riders with trusted garages, making every service transparent, convenient, and reliable.
 
           </p>
 
