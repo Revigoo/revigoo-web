@@ -113,7 +113,7 @@ Error generating stack: `+e.message+`
                       transition-all
                       duration-300
                       ${a?`border-orange-400 bg-orange-50 shadow-xl shadow-orange-100`:`border-slate-200 bg-white shadow-sm hover:shadow-lg`}
-                    `,children:[(0,B.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,B.jsx)(`span`,{className:`
+                    `,children:[(0,B.jsxs)(`div`,{children:[(0,B.jsx)(`span`,{className:`
                           text-xs
                           font-black
                           tracking-[0.2em]
@@ -247,7 +247,7 @@ Error generating stack: `+e.message+`
                       transition-all
                       duration-300
                       ${a?`border-orange-300 bg-orange-50 shadow-lg shadow-orange-100`:`border-slate-200 bg-white shadow-sm`}
-                    `,children:[(0,B.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,B.jsxs)(`div`,{children:[(0,B.jsx)(`span`,{className:`text-[10px] font-black tracking-[0.2em] text-orange-500`,children:n.number}),(0,B.jsx)(`h3`,{className:`mt-1 text-base font-black text-slate-900`,children:n.title})]}),a&&(0,B.jsx)(`span`,{className:`rounded-full bg-orange-500 px-2.5 py-1 text-[9px] font-bold text-white`,children:`ACTIVE`})]}),(0,B.jsx)(`p`,{className:`mt-2 text-sm leading-5 text-slate-500`,children:n.description})]})]},n.number)})})]}),(0,B.jsx)(X.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6},className:`mx-auto mt-16 max-w-2xl`,children:(0,B.jsxs)(`div`,{className:`\r
+                    `,children:[(0,B.jsx)(`div`,{className:`flex items-center justify-between`,children:(0,B.jsxs)(`div`,{children:[(0,B.jsx)(`span`,{className:`text-[10px] font-black tracking-[0.2em] text-orange-500`,children:n.number}),(0,B.jsx)(`h3`,{className:`mt-1 text-base font-black text-slate-900`,children:n.title})]})}),(0,B.jsx)(`p`,{className:`mt-2 text-sm leading-5 text-slate-500`,children:n.description})]})]},n.number)})})]}),(0,B.jsx)(X.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6},className:`mx-auto mt-16 max-w-2xl`,children:(0,B.jsxs)(`div`,{className:`\r
               relative\r
               rounded-2xl\r
               border\r
