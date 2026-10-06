@@ -1,0 +1,427 @@
+.rider-section {
+  position: relative;
+
+  padding: 150px 0;
+
+  background: #0a2342;
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.rider-section::before {
+  content: "";
+
+  position: absolute;
+  width: 600px;
+  height: 600px;
+
+  right: -300px;
+  top: 100px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 107, 0, 0.08);
+
+  filter: blur(20px);
+
+  pointer-events: none;
+}
+
+.rider-container {
+  position: relative;
+  z-index: 1;
+
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.rider-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 60px;
+}
+
+.rider-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+
+  color: #ff6b00;
+}
+
+.rider-kicker span {
+  width: 35px;
+  height: 1px;
+
+  background: #ff6b00;
+}
+
+.rider-header-note {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.rider-main {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.rider-content {
+  max-width: 510px;
+}
+
+.rider-title {
+  margin: 0 0 35px;
+
+  font-size: clamp(58px, 6vw, 88px);
+
+  line-height: 0.94;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 700;
+}
+
+.rider-title span {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.rider-description {
+  max-width: 450px;
+
+  margin: 0 0 35px;
+
+  font-size: 17px;
+
+  line-height: 1.75;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.rider-button {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px 22px;
+
+  border: none;
+  border-radius: 3px;
+
+  background: #ff6b00;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.rider-button:hover {
+  background: #ff7b1a;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.rider-visual {
+  position: relative;
+
+  height: 620px;
+
+  overflow: hidden;
+
+  background: #111c29;
+}
+
+.rider-image {
+  position: absolute;
+  inset: 0;
+
+  background-image: url('/rider.webp');
+
+  background-size: cover;
+  background-position: center;
+
+  transition: transform 0.8s ease;
+}
+
+.rider-visual:hover .rider-image {
+  transform: scale(1.035);
+}
+
+.rider-image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 35, 66, 0.02) 40%,
+      rgba(10, 35, 66, 0.8) 100%
+    );
+}
+
+/* =========================
+   IMAGE CAPTION
+========================= */
+
+.rider-image-caption {
+  position: absolute;
+
+  left: 30px;
+  bottom: 30px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 17px 20px;
+
+  background: rgba(10, 35, 66, 0.85);
+
+  backdrop-filter: blur(12px);
+
+  border-left: 2px solid #ff6b00;
+}
+
+.rider-image-caption > span {
+  font-size: 11px;
+  font-weight: 700;
+
+  color: #ff6b00;
+}
+
+.rider-image-caption div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.rider-image-caption strong {
+  font-size: 14px;
+}
+
+.rider-image-caption small {
+  font-size: 11px;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.rider-benefits {
+  display: grid;
+
+  grid-template-columns: 0.65fr 1.35fr;
+
+  gap: 100px;
+
+  margin-top: 130px;
+
+  padding-top: 55px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.rider-benefits-heading span {
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.17em;
+
+  color: #ff6b00;
+}
+
+.rider-benefits-heading p {
+  max-width: 300px;
+
+  margin: 18px 0 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* =========================
+   BENEFIT GRID
+========================= */
+
+.rider-benefits-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 50px 55px;
+}
+
+.rider-benefit {
+  display: flex;
+
+  gap: 18px;
+}
+
+.rider-benefit-icon {
+  flex-shrink: 0;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 50%;
+
+  color: #ff6b00;
+}
+
+.rider-benefit h3 {
+  margin: 0 0 8px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.rider-benefit p {
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+  .rider-main {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .rider-content {
+    max-width: 650px;
+  }
+
+  .rider-visual {
+    height: 550px;
+  }
+
+  .rider-benefits {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .rider-section {
+    padding: 90px 0;
+  }
+
+  .rider-container {
+    width: min(100% - 32px, 1240px);
+  }
+
+  .rider-header {
+    margin-bottom: 40px;
+  }
+
+  .rider-header-note {
+    display: none;
+  }
+
+  .rider-title {
+    font-size: clamp(48px, 14vw, 65px);
+  }
+
+  .rider-description {
+    font-size: 15px;
+  }
+
+  .rider-visual {
+    height: 430px;
+  }
+
+  .rider-image-caption {
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .rider-benefits {
+    margin-top: 85px;
+    padding-top: 40px;
+  }
+
+  .rider-benefits-grid {
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+  }
+
+}
